@@ -1,16 +1,19 @@
 {
+  "homepage": "https://mohdumar4253.github.io/Portfolio-main",
   "name": "portfolio",
   "version": "1.0.0",
   "type": "module",
   "description": "Full Stack Portfolio Website for Mohd Umar Siddiqui",
+  "homepage": "https://Umarsidd.github.io/Portfolio-/",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "dev": "vite",
+    "predeploy": "npm run build",
     "build": "vite build",
     "preview": "vite preview",
     "server": "node server/index.js",
     "dev:full": "concurrently \"npm run dev\" \"npm run server\"",
-    "deploy:full": "concurrently \"npm run build\" \"npm run deploy\""
+    "deploy:full": "concurrently \"npm run deploy\" \"npm run deploy\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
