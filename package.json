@@ -1,5 +1,4 @@
 {
-  "homepage": "https://mohdumar4253.github.io/Portfolio-main",
   "name": "portfolio",
   "version": "1.0.0",
   "type": "module",
@@ -16,6 +15,7 @@
     "deploy:full": "concurrently \"npm run deploy\" \"npm run deploy\""
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@reduxjs/toolkit": "^2.0.1",
     "axios": "^1.6.5",
     "class-variance-authority": "^0.7.0",

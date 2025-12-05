@@ -24,6 +24,7 @@ Your full-stack portfolio website has been successfully created with all request
 6. **Projects Section** - Featured projects with technology badges
    - Full-Stack Food Delivery Application
    - Scholarship Registration Portal
+   - Betzy (Betting Application)
 7. **Education Section** - Academic degrees and certifications
 8. **Contact Section** - Working form with validation and email integration
 9. **Footer** - Social links and quick navigation
@@ -91,6 +92,7 @@ Experience:
 Projects:
 - Full-Stack Food Delivery Application (MERN Stack)
 - Scholarship Registration Portal
+- Betzy (Betting Application with Redis/MongoDB)
 
 Education:
 - MCA - IGNOU (2023-2025) ✓ Updated

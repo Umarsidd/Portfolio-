@@ -71,6 +71,18 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Betzy",
+    type: "Betting Application",
+    description: "A betting application featuring a secure backend with MongoDB and Redis for high-performance data handling. Connected via Node.js and Express to ensure seamless operations.",
+    technologies: ["Node.js", "Express.js", "MongoDB", "Redis"],
+    highlights: [
+      "High-performance data handling with Redis",
+      "Secure backend architecture",
+      "Real-time updates",
+      "Scalable infrastructure"
+    ]
+  },
+  {
     title: "Full-Stack Food Delivery Application",
     type: "MERN Stack",
     description: "Developed a comprehensive food delivery platform with backend functionalities using ReactJS, NodeJS, ExpressJS, and MongoDB. Implemented secure JWT-based authentication, advanced filtering and pagination, Redux state management, and integrated payment gateway. Features include customizable ordering system, cart functionality, and real-time order tracking.",
