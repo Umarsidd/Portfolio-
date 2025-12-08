@@ -1,34 +1,29 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import emailjs from '@emailjs/browser';
+import axios from 'axios';
 
-// EmailJS Credentials
-const SERVICE_ID = 'service_zvhz9or';
-const TEMPLATE_ID = 'template_sdysmco';
-const PUBLIC_KEY = 'oJHL9iObrAzFpmuOu';
+// Backend API URL
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
 
 export const sendContactMessage = createAsyncThunk(
   'contact/sendMessage',
   async (formData, { rejectWithValue }) => {
     try {
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+      const response = await axios.post(`${API_URL}/contact`, {
+        name: formData.name,
+        email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_name: 'Mohd Umar Siddiqui', // Optional, can be customized in template
+      });
+
+      return {
+        success: true,
+        message: response.data.message || 'Message sent successfully!',
+        data: response.data
       };
-
-      const response = await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        templateParams,
-        PUBLIC_KEY
-      );
-
-      return { success: true, message: 'Message sent successfully!', data: response };
     } catch (error) {
-      console.error('EmailJS Error:', error);
-      return rejectWithValue('Failed to send message. Please try again later.');
+      console.error('Contact API Error:', error);
+      const errorMessage = error.response?.data?.message || 'Failed to send message. Please try again later.';
+      return rejectWithValue(errorMessage);
     }
   }
 );

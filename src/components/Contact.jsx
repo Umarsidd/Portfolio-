@@ -63,7 +63,7 @@ const Contact = () => {
       });
       setTimeout(() => {
         dispatch(resetContactState());
-      }, 5000);
+      }, 5001);
     }
   }, [success, dispatch]);
 

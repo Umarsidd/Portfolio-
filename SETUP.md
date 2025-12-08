@@ -12,7 +12,7 @@ Create a `.env` file in the root directory with the following content:
 
 ```env
 # Server Configuration
-PORT=5000
+PORT=5001
 NODE_ENV=development
 
 # Email Configuration (Optional - for contact form to send emails)
@@ -49,7 +49,7 @@ npm run dev:full
 
 This will start:
 - Frontend on http://localhost:5173
-- Backend on http://localhost:5000
+- Backend on http://localhost:5001
 
 ### Option B: Run Separately
 
@@ -94,14 +94,14 @@ npm run preview
 
 ### Port Already in Use
 
-If port 5173 or 5000 is already in use:
+If port 5173 or 5001 is already in use:
 
 ```bash
 # Kill process on port 5173
 lsof -ti:5173 | xargs kill
 
-# Kill process on port 5000
-lsof -ti:5000 | xargs kill
+# Kill process on port 5001
+lsof -ti:5001 | xargs kill
 ```
 
 Or change the PORT in `.env` file.

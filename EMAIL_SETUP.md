@@ -8,7 +8,7 @@ The contact form requires email configuration to send messages. Follow these ste
 2. Copy and paste this content:
 
 ```env
-PORT=5000
+PORT=5001
 NODE_ENV=development
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password_here
@@ -52,7 +52,7 @@ CORS_ORIGIN=http://localhost:5173
 ## Example .env File (Completed)
 
 ```env
-PORT=5000
+PORT=5001
 NODE_ENV=development
 EMAIL_USER=youremail@gmail.com
 EMAIL_PASS=abcdefghijklmnop

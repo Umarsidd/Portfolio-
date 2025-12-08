@@ -49,7 +49,7 @@ Your full-stack portfolio website has been successfully created with all request
 ### 🚀 Backend (Node.js + Express)
 
 #### **Server Features:**
-- Express server configured on port 5000
+- Express server configured on port 5001
 - CORS enabled for frontend communication
 - Contact form API endpoint
 - Email functionality with Nodemailer
@@ -204,7 +204,7 @@ PortPelio/
 2. **Create .env file**
    ```bash
    # Create .env in root directory
-   PORT=5000
+   PORT=5001
    NODE_ENV=development
    EMAIL_USER=
    EMAIL_PASS=

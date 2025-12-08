@@ -53,7 +53,7 @@ A modern, full-stack portfolio website built with React, Redux, Node.js, and sha
    
    Update the `.env` file with your credentials:
    ```env
-   PORT=5000
+   PORT=5001
    NODE_ENV=development
    
    # Email Configuration (Gmail)
@@ -215,7 +215,7 @@ Edit `tailwind.config.js` and `src/index.css` for custom color schemes.
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| PORT | Server port number | No (default: 5000) |
+| PORT | Server port number | No (default: 5001) |
 | NODE_ENV | Environment mode | No (default: development) |
 | EMAIL_USER | Gmail account for sending emails | Yes (for email functionality) |
 | EMAIL_PASS | Gmail app password | Yes (for email functionality) |
@@ -231,7 +231,7 @@ Edit `tailwind.config.js` and `src/index.css` for custom color schemes.
 
 ### Port already in use
 - Change the PORT in `.env` file
-- Or kill the process using the port: `lsof -ti:5000 | xargs kill`
+- Or kill the process using the port: `lsof -ti:5001 | xargs kill`
 
 ### Module not found errors
 - Delete `node_modules` and `package-lock.json`

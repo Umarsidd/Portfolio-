@@ -1,13 +1,21 @@
 import nodemailer from 'nodemailer';
+import mongoose from 'mongoose';
 import Contact from '../models/Contact.js';
 
 // Create transporter for sending emails
 const createTransporter = () => {
+  // Debug: Log environment variable status
+  console.log('🔍 Checking email configuration...');
+  console.log(`   EMAIL_USER: ${process.env.EMAIL_USER ? '✅ Set' : '❌ Not set'}`);
+  console.log(`   EMAIL_PASS: ${process.env.EMAIL_PASS ? '✅ Set' : '❌ Not set'}`);
+
   // Check if email credentials are configured
   if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
     console.log('📧 Email not configured - contact form will log messages only');
     return null;
   }
+
+  console.log('✅ Email configured - emails will be sent via Gmail');
 
   return nodemailer.createTransport({
     service: 'gmail',

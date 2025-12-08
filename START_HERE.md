@@ -33,7 +33,7 @@ Welcome! This is your complete full-stack portfolio website.
 Create a file named `.env` in the root folder with this content:
 
 ```env
-PORT=5000
+PORT=5001
 NODE_ENV=development
 EMAIL_USER=
 EMAIL_PASS=
@@ -147,8 +147,8 @@ npm run preview
 ## 🌐 Ports
 
 - **Frontend**: http://localhost:5173
-- **Backend**: http://localhost:5000
-- **API Endpoint**: http://localhost:5000/api
+- **Backend**: http://localhost:5001
+- **API Endpoint**: http://localhost:5001/api
 
 ## 📚 Documentation
 
@@ -209,7 +209,7 @@ PortPelio/
 ### Port already in use
 ```bash
 lsof -ti:5173 | xargs kill  # Kill frontend port
-lsof -ti:5000 | xargs kill  # Kill backend port
+lsof -ti:5001 | xargs kill  # Kill backend port
 ```
 
 ### Missing dependencies
