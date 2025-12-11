@@ -38,7 +38,7 @@ A modern, full-stack portfolio website built with React, Redux, Node.js, and sha
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd PortPelio
+   cd Portfolio 
    ```
 
 2. **Install dependencies**
